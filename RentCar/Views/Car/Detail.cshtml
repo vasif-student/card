@@ -1,0 +1,134 @@
+﻿
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<!--==================== DETAIL START ====================-->
+<div class="car-detail-card-wrapper">
+
+    <div class="car-detail-card">
+        <!-- card left -->
+        <div class="car-detail-imgs">
+            <div class="img-display">
+                <div class="img-showcase">
+                    <img src="~/image/cars/retro-car-222.jpg" alt="shoe image">
+                    <img src="~/image/cars/bmw-sport-car.jpg" alt="car image">
+                    <img src="~/image/cars/chevrolet-camaro-ss-muscle-car.jpg" alt="car image">
+                    <img src="~/image/cars/bugatti-0000.jpg" alt="car image">
+                    <img src="~/image/cars/cadillac-7.jpg" alt="car image">
+                    <img src="~/image/cars/beach-red-car.jpg" alt="car image">
+                </div>
+            </div>
+            <div class="img-select">
+                <div class="img-item">
+                    <a href="#" data-id="1">
+                        <img src="~/image/cars/retro-car-222.jpg" alt="car image">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="2">
+                        <img src="~/image/cars/bmw-sport-car.jpg" alt="car image">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="3">
+                        <img src="~/image/cars/chevrolet-camaro-ss-muscle-car.jpg" alt="car image">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="4">
+                        <img src="~/image/cars/bugatti-0000.jpg" alt="car image">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="5">
+                        <img src="~/image/cars/cadillac-7.jpg" alt="car image">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="6">
+                        <img src="~/image/cars/beach-red-car.jpg" alt="car image">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- card right -->
+        <div class="car-content">
+            <h2 class="car-title">Toyota <i>Corolla</i></h2>
+            <a href="https://www.toyota.com" class="car-link">rəsmi sayt</a>
+            <div class="car-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.7</span>
+            </div>
+
+            <div class="car-price">
+                <p class="last-price">Köhnə Qiymət: <span>₼57.00</span></p>
+                <p class="new-price">Yeni Qiymət: <span>₼49.00 (5%)</span></p>
+            </div>
+
+            <div class="car-detail">
+                <h2>Avtomobil haqqında: </h2>
+                <p>Toyota şirkətinin istehsal etdiyi kompakt (C seqment) sinif avtomobil. İstehsal olunmağa başlandığı 1966-cı ildən bu günə qədər 11 nəsildir. 32 milyondan çox istehsal sayıyla dünyanın ən çox satılan avtomobili ünvanını qorumaqdadır.</p>
+                <ul>
+                    <li>Şəhər: <span>Bakı</span></li>
+                    <li>Rayon: <span>Səbail</span></li>
+                    <li>Marka: <span>Toyota</span></li>
+                    <li>Model: <span>Corolla</span></li>
+                    <li>Buraxılış ili: <span>2006</span></li>
+                    <li>Rəng: <span>Qara</span></li>
+                    <li>Mühərrik: <span>1.4 L</span></li>
+                    <li>Mühərrikin gücü: <span>90 a.g.</span></li>
+                    <li>Yanacaq növü: <span>Dizel</span></li>
+                    <li>Yürüş: <span>230 000 km</span></li>
+                    <li>Sürət qutusu: <span>Mexaniki</span></li>
+                </ul>
+            </div>
+
+            <div class="car-rent-info">
+                <button id="popupbtn" type="button" class="btn">Kirayələ</button>
+            </div>
+
+            <div class="detailpage-social-links">
+                <p>Share At: </p>
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--==================== DETAIL END ====================-->
+
+
+<!--==================== COMMENT START ====================-->
+<div class="comment__container">
+
+    <div class="comment__section">
+        <p id="alert" class="alertbox"></p>
+        <input type="text" class="form-control" placeholder="Şərh" id="text_comment">
+        <button type="submit" id="btn_add_comment" class="btn btn-primary">Şərh əlavə edin</button>
+    </div>
+
+    <div id="js-discussion">
+        <ul id="list_comments"></ul>
+    </div>
+
+</div>
+<!--==================== COMMENT END ====================-->
